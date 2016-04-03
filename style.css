@@ -1,0 +1,125 @@
+body {
+    background:#DAA520;
+    
+}
+
+
+.picture img {
+    border-radius: 360px;
+    width: 200px;
+    height: 200px;
+}
+
+.picture {
+    position:relative;
+    margin-top: 70px;
+    margin-left:300px;
+    border:2px solid blue;
+    width:210px;
+}
+
+#name {
+    border:1px green solid;
+    position:relative;
+    margin-top: 20px;
+    margin-left: 100px;
+    width:70%;
+    overflow: hidden;
+}
+.font-main{
+    font-family: 'Montserrat', sans-serif;
+    font-size:40px ;
+}
+
+.wrapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border:2px solid;
+    
+}
+
+
+.row {
+    position: relative;
+    margin-top: -10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    
+}
+
+.menu {
+    width: 150px;
+    height: 500px;
+}
+
+li {
+    text-align: center;
+    border:2px solid;
+    
+}
+#facebook {
+    background-image:url(/img/index/footer/facebook-button.jpg);
+}
+.main-slider {
+    width:65%;
+    height: 500px;
+    overflow: hidden;
+    position:relative;
+    margin-right: 200px;
+    border:2px solid #FF0000; 
+    float: right;
+    text-align: center;
+    
+}
+
+.icon-menu {
+    position:relative;
+    margin-top:-510px;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: right;
+}
+
+.btn {
+  height:100px;
+  width:100px;
+  padding:20px;
+  text-align:center;
+}
+
+#about {
+  width:700px;
+  display:;
+}
+
+.item {
+  position:relative;
+  margin-left:20px;
+  margin-top:10px;
+  width:40%;
+  padding-right:30px;
+  font-family:'Lato' sans-serif;
+  border-bottom:1px solid blue ;
+  float:left;
+}
+.value {
+  float:right;
+  position:relative;
+  margin-right:20px;
+  margin-top:10px;
+  width:40%;
+  padding-right:30px;
+  font-family:'Lato' sans-serif;
+  border-bottom:1px solid black;
+}
+
+.header {
+    border:1px solid;
+    padding-left:30px; 
+    width:100;
+    height:60px;
+    font-family:'Montserrat' sans-serif;
+    font-size: 25px
+}

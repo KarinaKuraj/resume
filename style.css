@@ -112,7 +112,11 @@ li {
   display:none;
   position:absolute;
 }
-
+span {
+    box-sizing: border-box;
+    font-size: 20px;
+    
+}
 .item {
   position:relative;
   margin-left:20px;

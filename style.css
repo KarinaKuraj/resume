@@ -1,6 +1,10 @@
 body {
-    background:#DAA520;
+    background:#660000;
     
+}
+
+* {
+    box-sizing: border-box;
 }
 
 
@@ -11,9 +15,9 @@ body {
 }
 
 .picture {
-    position:relative;
+    position: relative;
     margin-top: 70px;
-    margin-left:300px;
+    margin-left:250px;
     border:2px solid blue;
     width:210px;
 }
@@ -32,20 +36,26 @@ body {
 }
 
 .wrapper {
+    position:absolute;
     margin-top: 15px;
     margin-bottom: 15px;
     overflow: hidden;
     border:2px solid;
-    
+    height:100%;
+    width:100%;
+    text-align: center;
 }
 
 
 .row {
     position: relative;
-    margin-top: -10px;
+    margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
     float: left;
+    width: 20%;
+    border:2px gray solid;
+    
     
 }
 
@@ -59,39 +69,48 @@ li {
     border:2px solid;
     
 }
-#facebook {
-    background-image:url(/img/index/footer/facebook-button.jpg);
-}
+
+
 .main-slider {
-    width:65%;
+    width:60%;
     height: 500px;
     overflow: hidden;
     position:relative;
-    margin-right: 200px;
-    border:2px solid #FF0000; 
-    float: right;
+    margin:0 auto;
+    border:2px solid #FF0000;
     text-align: center;
-    
+    display:inline-block;
 }
 
 .icon-menu {
     position:relative;
-    margin-top:-510px;
+    margin-top:15px;
+    margin-left: 20px;
     padding-left: 5px;
     padding-right: 5px;
     float: right;
+    width: 20%;
+    border:2px green solid;
+    text-align: center;
 }
 
-.btn {
-  height:100px;
-  width:100px;
-  padding:20px;
+.li-menu {
+  height: 100px;    
   text-align:center;
 }
 
+#facebook {
+    background-color: #2e669e;
+    
+}
+
 #about {
-  width:700px;
-  display:;
+  width:800px;
+  height:500px;
+  margin-left:-10px;
+  background-image:url(leather.png);
+  display:none;
+  position:absolute;
 }
 
 .item {
@@ -100,12 +119,15 @@ li {
   margin-top:10px;
   width:40%;
   padding-right:30px;
-  font-family:'Lato' sans-serif;
   border-bottom:1px solid blue ;
   float:left;
+  font:'Montserrat' sans-serif;
+  color:#004280;
+  font-size:15px;
 }
+
 .value {
-  float:right;
+  display: inline-block;
   position:relative;
   margin-right:20px;
   margin-top:10px;
@@ -115,11 +137,23 @@ li {
   border-bottom:1px solid black;
 }
 
-.header {
-    border:1px solid;
+header {
+    border-bottom:1px solid #0077e6;
     padding-left:30px; 
     width:100;
     height:60px;
-    font-family:'Montserrat' sans-serif;
-    font-size: 25px
+}
+
+header p {
+    font:'Montserrat' sans-serif;
+    color:#004280;
+    font-size: 30px;
+}
+
+
+    
+    
+    
+    
+    
 }

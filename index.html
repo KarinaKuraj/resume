@@ -9,68 +9,137 @@
   </head>
   <body>
       
-     <div class="wrapper">
-      <div class="main-slider">
-          <div id="about">
+  <div class="wrapper">
+    <div class="main-slider">
+      <div id="about">
         <header>
-         <p class='about'>About me</p>
+         <p class='Fonthead'>About me</p>
         </header> 
-      <hr>
-       <div class='personal'>
+        <div class='personal'>
          <div class="item-title">
-            <div class="item">
-               <span>NAME:</span>
-            </div>
-            <div class="value">
-               <span>Karina Kurai</span>
-            </div>
+           <div class="item">
+              <span><img src='user.png'/> NAME:</span>
+           </div>
+           <div class="value">
+              <span id='imp'>Karina Kurai</span>
+           </div>
          </div>    
-       </div>
-       <div class='personal'>
+        </div>
+        <div class='personal'>
          <div class="item-title">
             <div class="item">
-               <span>BIRTHDAY:</span>
+               <span id='imp'><img src='birth.png'> BIRTHDAY:</span>
             </div>
             <div class="value">
-               <span>24.04.1990</span>
+               <span id='imp'>24.04.1990</span>
             </div>
           </div>    
         </div>
+        <div  class='personal'>
+         <div class='item-title'>
+             <div class = 'item'>
+               <span id='imp'><img src='phone.png'> PHONE</span>  
+             </div>
+             <div class='value'>
+               <span id='imp'>093-49-46-516</span>     
+             </div>
+         </div>        
+        </div>
+        <div  class='personal'>
+         <div class='item-title'>
+             <div class = 'item'>
+                 <span id='imp'><img src='adres.png'> ADRESS</span>
+             </div>
+             <div class='value'>
+               <span id='imp'>Lviv, Ukraine</span>
+             </div>
+         </div>        
+        </div>
+        <div  class='personal'>
+         <div class='item-title'>
+             <div class = 'item'>
+                 <span id='imp'><img src='mail.png'> EMAIL</span>
+             </div>
+             <div class='value'>
+               <span id='imp'>karina_gretta@ukr.net</span>
+             </div>
+         </div>        
+        </div>
       </div>
-    </div>
+      <div id='about'>
+       <div class='education'>
+        <p>Name of university</p>
+        <p>2007-2012</p>
+        <p>Lviv University</p>
+       </div>
+       <div id='skills'>
+        <p>HTML</p>
+        <div class='banner'>
+         <div class='inside'>
+          <div class='text'>75%</div>
+         </div>
+        </div>
+       </div>
+       
+       
+       
+       
+       
+       
+      </div>
+       <div id="firstpage">
         <div class="picture">
           <img src='fine.jpg'/>
         </div>
         <div id="name">
              <p class="font-main">Hello,I am Karina Kurai</p>
              <p><br>Junior web-developer</br></p>
-        </div>     
-       </div> 
+        </div>
+       </div>
+      </div>
+      
        
        <aside class="row">
          <ul class="menu">
-          <li class="li-menu"><button class='btn'>Home</button></li>
-          <li class="li-menu"><button id = 'btn1' class='btn' >About</button></li>
-          <li class="li-menu"><button class="btn">Education</button></li>
-          <li class="li-menu"><button class='btn'>Contacts</button></li>
+          <li class="li-menu"><button id = 'btn'  class='btn'><span id='button' class='home'></span></button></li>
+          <li class="li-menu"><button id = 'btn1' class='btn'><span id='button' class = 'about'></span></button></li>
+          <li class="li-menu"><button id = 'btn2' class="btn"><span id='button' class='resume'></span></button></li>
+          <li class="li-menu"><button id = 'btn3' class='btn'><span id='button' class='contact'></span></button></li>
          </ul>
         </aside>
         <aside class="icon-menu">
-          <ul class="menu">
-              <li class="li-menu" id='facebook'><button class='btn'>Facebook</button></li>
-              <li class="li-menu"><button class='btn'>Github</button></li>
-              <li class="li-menu"><button class='btn'>Twitter</button></li>
-              <li class="li-menu"><button class='btn'>Google</button></li>
+          <ul class='menu'>
+              <li class='li-menu'><button class='btn'><span id='button' class='facebook'></span></button></li>
+              <li class='li-menu'><button class='btn'><span id ='button' class='twit'></span></button></li>
+              <li class='li-menu'><button class='btn'><span id= 'button' class='github'></span></button></li>
+              <li class='li-menu'><button class='btn'><span id = 'button' class='vkcom'></span></button></li>
           </ul>
         </aside>
-    </div>
+        <div class="form">
+            <form action="contacts" method = "post">
+            <fieldset>
+           <lable for="name">Name</lable>
+            <input id ="name" type="text"></input>
+         </fieldset>
+         <fieldset>
+           <lable for="email">Email</lable>
+            <input type="text" id="empID" name="EmployeeID" required pattern="[A-Z]{2}[0-9]{4}"
+              title="Employee ID is two capital letters followed by four digits">
+         </fieldset>
+         <fieldset>
+          <p><b>Write me</b></p>
+          <p><textarea name="comment"></textarea>
+         </fieldset>
+        <input type="submit" value="Submit"/>
+      </form>
+
     
         
             
             
             
             
-  </div>
+ 
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="site.js"></script>

@@ -1,5 +1,6 @@
 body {
-    background:url('body.png');
+    background:url('background.jpg');
+
     
 }
 
@@ -9,7 +10,7 @@ body {
 
 #firstpage {
     border:2px solid yellow;
-    display:none;
+    display:block;
 }
 .picture img {
     border-radius: 360px;
@@ -32,8 +33,9 @@ body {
     margin-left: 100px;
     width:70%;
     overflow: hidden;
-    display:none;
+    display:block;
 }
+
 .font-main{
     font-family: 'Montserrat', sans-serif;
     font-size:40px ;
@@ -178,7 +180,7 @@ header {
     background: url('twitter.png') center no-repeat #e6f3ff;
 }
 .facebook {
-    background: url('icon.png') center no-repeat #0E318A;
+    background: url('social.png') center no-repeat #0E318A;
 }
 
 .github {
@@ -213,6 +215,14 @@ span:focus {
 outline: none;
 }
 
+#thirdpage {
+  width:100%;
+  height:100%;
+  background-image:url(leather.png);
+  display:none;
+  position:absolute;
+}
+
 
 .banner {
   height:20px;
@@ -228,8 +238,17 @@ outline: none;
   background-color:#004280;
   float:left;
   margin-bottom:-10px;
-  
+}
+ 
+ #contact {
+     
     
+ }
+  
+.form {
+    display:block;
+    
+}    
     
     
     

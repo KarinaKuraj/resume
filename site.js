@@ -1,60 +1,57 @@
+
 /*global $ */
-$/*(document).ready(function() {
-  $('#btn1').click(function() {
-    if (document.getElementById('firstpage')) {
-
-                if (document.getElementById('firstpage').style.display == 'none') {
-                    document.getElementById('firstpage').style.display = 'block';
-                    document.getElementById('about').style.display = 'none';
-                }
-                else {
-                    document.getElementById('firstpage').style.display = 'none';
-                    document.getElementById('about').style.display = 'block';
-                }
-            }
-});
-});
- $('#btn2').click(function() {
-    if (document.getElementById('firstpage')) {
-
-                if (document.getElementById('firstpage').style.display == 'none') {
-                    document.getElementById('firstpage').style.display = 'block';
-                    document.getElementById('thirdpage').style.display = 'none';
-                }
-                else {
-                    document.getElementById('firstpage').style.display = 'none';
-                    document.getElementById('thirdpage').style.display = 'block';
-                }
-            }
-});
-*/
 $(document).ready(function() {
+    $('#btn').click(function() {
+      $('#firstpage').show('slow');
+       $('#about').hide('slow');
+        $('#thirdpage').hide('slow');
+         $('#contact').hide('slow');
+});
+    
     $('#btn1').click(function() {
       $('#about').show('slow');
         $("#firstpage").hide('slow');
          $('#thirdpage').hide('slow');
+          $('#contact').hide('slow');
         
 });
     $('#btn2').click(function() {
       $('#thirdpage').show('slow');
         $("#firstpage").hide('slow');
           $('#about').hide('slow');
+           $('#contact').hide('slow');
           
     
+});
+    $('#btn3').click(function() {
+      $('#contact').show('slow'); 
+      $('#thirdpage').hide('slow');
+        $("#firstpage").hide('slow');
+          $('#about').hide('slow');
+    });
+
     
 });
 
-    $('#btn3').click(function() {
-      $("contact").show('slow');
-        $('#thirdpage').hide('slow');
-          $("#firstpage").hide('slow');
-            $('#about').hide('slow');
-          
-    });
-    
-    
-    
+$(document).ready(function() {
+    $('#submit').click(function() {
+     $.ajax({
+      url: "https://formspree.io/karina_gretta@ukr.net",  
+      method: "POST",
+      data: {
+             email: empID.value,
+             message: msg.value
+             },
+      dataType: "json"
+  }).done(function() {
+     $('.form').html('<h1>Thank you!</h1><p>Your message is sent!')
+  });
 });
+}
+
+
+)
+
 
 
 

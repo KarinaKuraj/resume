@@ -8,10 +8,10 @@ body {
 
 .wrapper {
     position:absolute;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
-    height:90%;
+    height:100%;
     width:100%;
     text-align: center;
     border-radius:20px;
@@ -39,7 +39,7 @@ body {
 .picture img {
     border-radius: 360px;
     width: 200px;
-    height: 230px;
+    height: 200px;
 }
 
 .picture {
@@ -51,10 +51,10 @@ body {
 
 .name {
     position:relative;
-    margin-top: 20px;
     margin-left: 120px;
+    margin-bottom: 20px;
     width:70%;
-    overflow: hidden;
+    height:100px;
     display:block;
 }
 
@@ -68,6 +68,7 @@ body {
     font-family:'Amaranth';
     font-size:30px;
     color:#a32929;
+    bottom:20px;
     
 }
 
@@ -127,7 +128,7 @@ header {
     display:block;
     float:right;
     width:50%;
-    height:180px;
+    height:100px;
     margin-top:-3px;
 }
 
@@ -139,7 +140,8 @@ header {
 }
 
 .task {
-    width:50%;
+    width:30%;
+    margin-left:20px;
 }
 
 .clear {
@@ -150,7 +152,7 @@ header {
 .Fonthead {
     font-family:Impact, fantasy;
     color:#004280;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .Fontsecond {
